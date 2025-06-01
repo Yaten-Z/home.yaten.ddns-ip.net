@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Me!</title>
+  <link rel="stylesheet" href="https://chinese-fonts-cdn.deno.dev/packages/syst/dist/SourceHanSerifCN/result.css" />
+  <style>
+    :root {
+      --bg: #0b131d;
+      --text-color: #e8e6e3;
+      --link-color: gray;
+    }
+
+    body {
+      margin: 0;
+      padding: 2rem 1rem;
+      background-color: var(--bg);
+      color: var(--text-color);
+      font-family: 'Source Han Serif CN', serif;
+      font-size: 1.15rem;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .container {
+      max-width: 680px;
+      padding: 2rem;
+      text-align: justify; /* 两端对齐 */
+      animation: fadeIn 1.5s ease forwards;
+      text-indent: 2em;
+      opacity: 0; /* 初始透明，动画后变不透明 */
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+    }
+
+    a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        filter: blur(4px);
+      }
+      to {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+
+    /* 响应式：手机端字体稍微小一点 */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+        <h1 class="greeting">About 那个叫 风与路人 的人。</h1>
+        <p>出生于2011年，来自中国广东的某粤东城市。</p>
+        <p>他初中就读于 ST JS Middle School（防备老师）。5岁，他开始玩电脑。10岁，他便开始接触 <span class="highlight">Py3</span>，<span class="highlight">C</span>，<span class="highlight">C++</span>，<span class="highlight">JAVA</span>。虽然后来时光变迁，但这段经历一直保存在深海中，许多记忆保存在落鲸里。</p>
+        <p>他热衷于探索，尤其是 <span class="highlight">文案</span>、<span class="highlight">web</span>、<span class="highlight">Friend</span>、<span class="highlight">Music</span>、<span class="highlight">写代码</span>、<span class="highlight">建站</span>……。</p>
+        <p>他有许多 Tags:</p>
+        <p>数学不好，物理也不好</p>
+        <p>emo人物</p>
+        <p>乱搞电脑，听歌，看书</p>
+        <p>中二，发癫，小菜·-·</p>
+        <p>如果你想与他联系，可以通过邮箱 ，或者在他的 <a href="https://github.com/Yaten-Z">GitHub</a>、<a href="mailto:Yaten-Z@outlook.com">Email</a> 和 <a target="_blank" href="https://wpa.qq.com/msgrd?v=3&uin=2635802854&site=qq&menu=yes">QQ</a> 找到他，欢迎交流。</p>
+    </div>
+</body>
+</html>
